@@ -1,19 +1,42 @@
 {
   "name": "coaching.philos.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "philos, angular, bootcamp, javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.config.js",
+    "test": "mocha -w",
+    "start": "webpack-dev-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "JavaScript",
+    "Angular",
+    "Node",
+    "Bootcamp"
+  ],
+  "author": "max@philos.io, davy@philos.io",
+  "license": "MIT",
   "dependencies": {
     "angular": "^1.4.7",
+    "angular-animate": "^1.4.7",
+    "angular-aria": "^1.4.7",
+    "angular-material": "^0.11.4",
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "mocha": "^2.3.3"
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.21.0",
+    "file-loader": "^0.8.4",
+    "font-awesome-webpack": "0.0.4",
+    "image-webpack-loader": "^1.6.2",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-safari-launcher": "^0.1.1",
+    "mocha": "^2.3.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }
